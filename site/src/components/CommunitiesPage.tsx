@@ -23,6 +23,7 @@ import {
 } from "@mui/material";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import ClearIcon from "@mui/icons-material/Clear";
+import HomeIcon from "@mui/icons-material/Home";
 import type { Community } from "../lib/types";
 import {
   formatDistanceWithTime,
@@ -153,10 +154,17 @@ export default function CommunitiesPage({ communities }: Props) {
   return (
     <Box sx={{ pb: 12 }}>
       <AppBar position="sticky" color="inherit" elevation={1}>
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
           <Typography variant="h6" sx={{ fontWeight: 700 }}>
             小区列表
           </Typography>
+          <Button
+            color="inherit"
+            startIcon={<HomeIcon />}
+            href={withBaseUrl(baseUrl, "communities")}
+          >
+            首页
+          </Button>
         </Toolbar>
       </AppBar>
 

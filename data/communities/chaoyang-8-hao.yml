@@ -11,8 +11,8 @@ address_brief: ""
 tags: ["地铁", "次新"]
 
 links:
-  - title: "贝壳小区页（示例）"
-    url: "https://example.com/community/100001"
+  - title: "安居客楼盘页"
+    url: "https://hz.fang.anjuke.com/loupan/401275.html"
 
 build:
   build_year_range: "2014-2018"
@@ -80,8 +80,23 @@ cons:
 risks:
   - "二手房挂牌波动较快"
 
+images:
+  cover: "../assets/communities/chaoyang-8-hao/cover.jpg"
+  gallery:
+    - "../assets/communities/chaoyang-8-hao/1.jpg"
+    - "../assets/communities/chaoyang-8-hao/2.jpg"
+    - "../assets/communities/chaoyang-8-hao/3.jpg"
+    - "../assets/communities/chaoyang-8-hao/4.jpg"
+
 notes_md: |
   ## 一句话结论
   价格便宜，交通方便，配套完善。环境太拉，楼层过高。
+
+  ## 小区图片
+  ![朝阳8号封面](../assets/communities/chaoyang-8-hao/cover.jpg)
+  ![朝阳8号图1](../assets/communities/chaoyang-8-hao/1.jpg)
+  ![朝阳8号图2](../assets/communities/chaoyang-8-hao/2.jpg)
+
+  图源：安居客楼盘公开页面
 
 updated_at: "2026-02-13"

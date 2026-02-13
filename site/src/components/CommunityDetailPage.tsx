@@ -14,6 +14,7 @@ import {
   Typography
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import HomeIcon from "@mui/icons-material/Home";
 import ReactMarkdown from "react-markdown";
 import type { Community } from "../lib/types";
 import { formatDistanceWithTime, withBaseUrl } from "../lib/format";
@@ -49,10 +50,18 @@ export default function CommunityDetailPage({ community }: Props) {
   return (
     <Box sx={{ pb: 3 }}>
       <AppBar position="sticky" color="inherit" elevation={1}>
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
           <Typography variant="h6" sx={{ fontWeight: 700 }}>
             {community.name_zh}
           </Typography>
+          <Link
+            href={withBaseUrl(baseUrl, "communities")}
+            underline="none"
+            sx={{ display: "inline-flex", alignItems: "center", gap: 0.5, fontWeight: 600 }}
+          >
+            <HomeIcon fontSize="small" />
+            首页
+          </Link>
         </Toolbar>
       </AppBar>
 

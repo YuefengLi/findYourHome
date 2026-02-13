@@ -20,6 +20,7 @@ import {
   Typography
 } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import HomeIcon from "@mui/icons-material/Home";
 import type { Community } from "../lib/types";
 import { formatDistanceWithTime, getNearestMetroDistance, getNearestMetroLabel, withBaseUrl } from "../lib/format";
 
@@ -148,10 +149,17 @@ export default function ComparePage({ communities }: Props) {
     return (
       <Box>
         <AppBar position="sticky" color="inherit" elevation={1}>
-          <Toolbar>
+          <Toolbar sx={{ justifyContent: "space-between" }}>
             <Typography variant="h6" sx={{ fontWeight: 700 }}>
               小区对比
             </Typography>
+            <Button
+              color="inherit"
+              startIcon={<HomeIcon />}
+              href={withBaseUrl(baseUrl, "communities")}
+            >
+              首页
+            </Button>
           </Toolbar>
         </AppBar>
         <Container sx={{ py: 3 }}>
@@ -171,9 +179,18 @@ export default function ComparePage({ communities }: Props) {
           <Typography variant="h6" sx={{ fontWeight: 700 }}>
             小区对比
           </Typography>
-          <Button color="inherit" onClick={clearAll}>
-            清空
-          </Button>
+          <Stack direction="row" spacing={1}>
+            <Button
+              color="inherit"
+              startIcon={<HomeIcon />}
+              href={withBaseUrl(baseUrl, "communities")}
+            >
+              首页
+            </Button>
+            <Button color="inherit" onClick={clearAll}>
+              清空
+            </Button>
+          </Stack>
         </Toolbar>
       </AppBar>
 
