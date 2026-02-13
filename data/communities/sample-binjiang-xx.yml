@@ -1,0 +1,97 @@
+id: 100001
+slug: binjiang-sample-garden
+name_zh: "滨江示例花园"
+alias: ["示例花园"]
+
+city: "杭州"
+district: "滨江"
+area: "长河"
+address_brief: "滨江区示例路 88 号附近"
+
+tags: ["地铁", "次新", "改善"]
+
+links:
+  - title: "贝壳小区页（示例）"
+    url: "https://example.com/community/100001"
+
+build:
+  build_year_range: "2014-2018"
+  property_type: "住宅"
+  developer: "示例开发商"
+  property_mgmt_company: "示例物业"
+
+price:
+  level: "偏高"
+  ref_wan_per_sqm: 5.8
+  ref_total_wan_range: "450-650"
+
+distance:
+  metro:
+    - line: "6号线"
+      station: "示例站"
+      distance_m: 850
+  to_targets:
+    - id: "parents_work"
+      name: "父母工作地"
+      distance_m: 12000
+
+transport:
+  bus: "周边公交线路较多"
+  drive_notes: "晚高峰通行压力中等"
+
+living:
+  commerce: "商业体步行可达"
+  hospital: "三甲医院驾车约 20 分钟"
+  park: "滨水公园步行约 15 分钟"
+  school: "周边有九年一贯制学校"
+
+property:
+  green_rate: 0.35
+  landscaping: "较好"
+  has_pool: false
+  has_kids_playground: true
+  has_separation_ped_car: true
+  management_fee:
+    cny_per_sqm_month_range: "2.8-3.5"
+  parking:
+    monthly_rent_cny_range: "300-500"
+    spot_price_wan_range: "18-25"
+  facilities_note: "会所和健身房配置一般"
+
+housing_stock:
+  building_types:
+    - type: "洋房"
+      total_floors_range: "6-11"
+      notes: "电梯洋房"
+      layouts:
+        - area_sqm_range: "80-90"
+          layout_tags: ["2房2厅", "南北"]
+          main_supply: true
+        - area_sqm_range: "90-100"
+          layout_tags: ["3房"]
+    - type: "高层"
+      total_floors_range: "18-33"
+      notes: ""
+      layouts:
+        - area_sqm_range: "90-100"
+          layout_tags: ["2房", "3房"]
+          main_supply: true
+        - area_sqm_range: "100-120"
+          layout_tags: ["3房2卫"]
+  my_focus:
+    area_sqm_range: "90-100"
+    notes: "总价可控，优先南向"
+
+pros:
+  - "地铁通勤便利"
+  - "小区界面较新"
+cons:
+  - "车位偏紧张"
+risks:
+  - "二手房挂牌波动较快"
+
+notes_md: |
+  ## 一句话结论
+  适合改善型家庭，地铁通勤表现较好，但需重点核实车位供需。
+
+updated_at: "2026-02-13"

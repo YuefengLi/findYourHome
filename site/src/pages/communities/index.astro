@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CommunitiesPage from "../../components/CommunitiesPage";
+import { loadCommunities } from "../../lib/data";
+
+const communities = loadCommunities();
+---
+
+<BaseLayout title="小区列表">
+  <CommunitiesPage client:load communities={communities} />
+</BaseLayout>

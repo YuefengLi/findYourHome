@@ -1,0 +1,87 @@
+id: 100002
+slug: chaoyang-8-hao
+name_zh: "朝阳8号"
+alias: ["朝阳逸景苑"]
+
+city: "杭州"
+district: "萧山"
+area: "南卧"
+address_brief: ""
+
+tags: ["地铁", "次新"]
+
+links:
+  - title: "贝壳小区页（示例）"
+    url: "https://example.com/community/100001"
+
+build:
+  build_year_range: "2014-2018"
+  property_type: "住宅"
+  developer: "众安"
+  property_mgmt_company: "新龙湖"
+
+price:
+  level: "偏低"
+  ref_wan_per_sqm: 2.3
+  ref_total_wan_range: "190-280"
+
+distance:
+  metro:
+    - line: "2号线"
+      station: "朝阳"
+      distance_m: 580
+  to_targets:
+    - id: "parents_work"
+      name: "父母工作地"
+      distance_m: 12000
+
+transport:
+  bus: ""
+  drive_notes: ""
+
+living:
+  commerce: ""
+  hospital: ""
+  park: ""
+  school: "无学区"
+
+property:
+  green_rate: 0.35
+  landscaping: "较差"
+  has_pool: false
+  has_kids_playground: true
+  has_separation_ped_car: true
+  management_fee:
+    cny_per_sqm_month_range: "3.1"
+  parking:
+    monthly_rent_cny_range: "400"
+    spot_price_wan_range: ""
+  facilities_note: ""
+
+housing_stock:
+  building_types:
+    - type: "高层"
+      total_floors_range: "1~33"
+      notes: ""
+      layouts:
+        - area_sqm_range: "90-100"
+          layout_tags: ["3房"]
+          main_supply: true
+        - area_sqm_range: "100-120"
+          layout_tags: ["3房2卫"]
+  my_focus:
+    area_sqm_range: "90-100"
+    notes: "总价可控，优先南向"
+
+pros:
+  - "地铁通勤便利"
+cons:
+  - "小区界面较差"
+risks:
+  - "二手房挂牌波动较快"
+
+notes_md: |
+  ## 一句话结论
+  价格便宜，交通方便，配套完善。环境太拉，楼层过高。
+
+updated_at: "2026-02-13"

@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CommunityDetailPage from "../../components/CommunityDetailPage";
+import { findCommunityByKey, loadCommunities } from "../../lib/data";
+
+export function getStaticPaths() {
+  const communities = loadCommunities();
+  const paths = communities.flatMap((community) => {
+    if (community.slug && community.slug !== community.id) {
+      return [{ params: { key: community.slug } }, { params: { key: community.id } }];
+    }
+    return [{ params: { key: community.id } }];
+  });
+  return paths;
+}
+
+const { key } = Astro.params;
+const community = key ? findCommunityByKey(key) : undefined;
+
+if (!community) {
+  throw new Error(`Community not found for key=${key}`);
+}
+---
+
+<BaseLayout title={community.name_zh}>
+  <CommunityDetailPage client:load community={community} />
+</BaseLayout>

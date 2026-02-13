@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ComparePage from "../components/ComparePage";
+import { loadCommunities } from "../lib/data";
+
+const communities = loadCommunities();
+---
+
+<BaseLayout title="小区对比">
+  <ComparePage client:load communities={communities} />
+</BaseLayout>
